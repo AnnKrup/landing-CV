@@ -1,0 +1,213 @@
+/*@font-face*/
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url("../fonts/Gilroy-Bold.ttf"); }
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url("../fonts/Gilroy-Medium.ttf"); }
+
+.small-text, .footer__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Gilroy-Medium; }
+
+.large-text, .about-me__title, .skills__title, .portfolio__title, .footer__title {
+  font-size: 34px;
+  line-height: 42px;
+  font-family: Gilroy-Bold; }
+
+.medium-text, .personal-info__profession, .about-me__text, .skills__subtitle, .skills__text, .portfolio__text, .footer__subtitle, .footer__btn {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Gilroy-Medium; }
+
+.container, .header, .personal-info, .about-me, .skills, .portfolio, .footer {
+  margin: 0 auto; }
+
+.active-link {
+  color: #070707 !important; }
+
+.header {
+  max-width: 940px;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Gilroy-Bold;
+  cursor: pointer; }
+
+.menu-desktop {
+  display: flex;
+  justify-content: space-between;
+  padding: 33px 0;
+  border-bottom: 1px solid #828282; }
+  .menu-desktop__link {
+    display: flex;
+    text-decoration: none;
+    color: #828282; }
+
+.menu-mobile {
+  display: none; }
+  .menu-mobile__icon {
+    display: none;
+    position: absolute;
+    top: 56px;
+    right: 15%; }
+  .menu-mobile__nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    width: 80%;
+    background-color: white; }
+  .menu-mobile__row {
+    width: 33px;
+    height: 4px;
+    margin-bottom: 4px;
+    background-color: #070707; }
+  .menu-mobile__link {
+    padding: 20px;
+    text-decoration: none;
+    color: #070707; }
+  .menu-mobile__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    opacity: 0.3; }
+  .menu-mobile__close:hover {
+    opacity: 1; }
+  .menu-mobile__close:before, .menu-mobile__close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333; }
+  .menu-mobile__close:before {
+    transform: rotate(45deg); }
+  .menu-mobile__close:after {
+    transform: rotate(-45deg); }
+
+.personal-info {
+  max-width: 940px;
+  font-family: Gilroy-Bold; }
+  .personal-info__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0; }
+  .personal-info__fullname {
+    font-size: 48px;
+    line-height: 60px; }
+  .personal-info__change-language {
+    font-size: 16px;
+    line-height: 20px;
+    transform: rotate(-90deg);
+    transform-origin: top; }
+
+.about-me {
+  text-align: center;
+  padding: 120px 0 90px 0;
+  background-color: #F6F6F6; }
+  .about-me__text {
+    padding: 18px 0; }
+
+.skills {
+  padding: 90px 0;
+  max-width: 635px;
+  margin: 0 auto;
+  text-align: center; }
+  .skills__title {
+    padding-bottom: 70px; }
+  .skills__subtitle {
+    padding: 70px 0 85px 0; }
+  .skills__text {
+    padding: 25px 0 40px 0; }
+  .skills__row {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; }
+  .skills__stars {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; }
+
+.portfolio {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F6F6F6; }
+  .portfolio__title {
+    padding: 45px 0 110px 0; }
+  .portfolio__text {
+    padding: 45px 0 95px 0; }
+
+.footer {
+  padding: 115px 0;
+  text-align: center;
+  margin: 0 auto; }
+  .footer__subtitle {
+    padding: 20px 0 30px 0; }
+  .footer__text {
+    padding: 45px 0 0 0;
+    color: #828282; }
+  .footer__icon {
+    padding-top: 85px; }
+  .footer__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 180px;
+    border-radius: 50%;
+    background-color: #070707;
+    color: #FFFFFF;
+    font-family: Gilroy-Bold;
+    cursor: pointer; }
+
+@media only screen and (max-width: 1050px) {
+  .container, .header, .personal-info, .about-me, .skills, .portfolio, .footer {
+    width: 80%;
+    padding: 0 10%; }
+  .personal-info__img {
+    width: 100%;
+    padding-bottom: 40px; }
+  .portfolio__img {
+    width: 100%; }
+  .footer__icon {
+    width: 100%; }
+  .about-me {
+    padding-bottom: 80px;
+    padding-top: 80px; }
+  .skills {
+    padding: 80px 0; }
+  .portfolio__title {
+    padding: 80px 0; }
+  .footer {
+    padding: 80px 0; } }
+
+@media only screen and (max-width: 560px) {
+  .skills__row {
+    flex-direction: column; }
+  .skills__column {
+    padding-bottom: 60px; }
+  .skills__subtitle {
+    padding: 0 0 50px 0; }
+  .personal-info__change-language {
+    display: none; }
+  .menu-desktop {
+    display: none; }
+  .menu-mobile__icon {
+    display: block; }
+  .menu-mobile {
+    display: block; }
+  .menu-mobile:hover .menu-mobile__nav {
+    display: flex; }
+  .menu-mobile:hover .menu-mobile__icon {
+    position: static; }
+  .header {
+    position: relative; }
+  .personal-info__text {
+    flex-direction: column;
+    align-items: flex-start; } }
